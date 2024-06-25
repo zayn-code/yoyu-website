@@ -1,0 +1,223 @@
+@media (max-width: 980px) {
+    .p-content {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+
+    .mobile-img {
+        width: 100% !important;
+        margin-top: 30px;
+    }
+
+    .contact p {
+        font-size: 40px !important;
+        line-height: 46px !important;
+    }
+
+    .contact img {
+        width: 80px !important;
+    }
+
+    .logo {
+        padding: 24px 50px !important;
+    }
+}
+
+html, body {
+    width: 100%;
+    height: 100%
+}
+
+.body-div {
+    width: 1440px;
+    height: 100%;
+}
+
+.logo {
+    background: white;
+    padding: 24px 120px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+.card {
+    width: 332px;
+    height: 440px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 8px 8px 8px 8px;
+    opacity: 1;
+    text-align: center;
+    padding-top: 56px;
+    margin-top: 74px;
+}
+
+.card img {
+    width: 100px;
+}
+
+.card .title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #3D3D3D;
+    line-height: 30px;
+    -webkit-background-clip: text;
+    margin-top: 24px;
+    padding: 0 32px;
+}
+
+.card .content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3D3D3D;
+    line-height: 26px;
+    -webkit-background-clip: text;
+    margin-top: 72px;
+    padding: 0 32px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Source Han Sans CN-Bold, Source Han Sans CN, sans-serif;
+    background-color: #EAEEF3;
+}
+
+.title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-header .title {
+    margin-top: 88px;
+    min-width: 400px;
+}
+
+.title-zh {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3D3D3D;
+    line-height: 41px;
+}
+
+.title-en {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3D3D3D;
+    line-height: 23px;
+}
+
+.header-image {
+    height: 104px;
+    font-size: 72px;
+    color: #00000000;
+    font-weight: 700;
+    opacity: .3;
+    line-height: 104px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+}
+
+.body-padding {
+    padding: 0 32px;
+}
+
+.p-content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3D3D3D;
+    line-height: 30px;
+    -webkit-background-clip: text;
+}
+
+.p-content img {
+    width: 40px;
+    margin-right: 16px;
+}
+
+.product-grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 442px);
+}
+
+.product-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:after {
+        content: "";
+        width: 442px;
+    }
+}
+
+.product-box {
+    width: 368px;
+    height: 252px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 10px 10px 10px 10px;
+    padding: 24px 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.product-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.product-header {
+    display: flex;
+    justify-content: start;
+}
+
+.product-title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.product-desc {
+    margin-top: 13px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #9E9E9E;
+    line-height: 24px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.click-detail {
+    font-weight: 500;
+    font-size: 16px;
+    color: #0256FF;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.foot {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 400;
+    color: #3D3D3D;
+    line-height: 23px;
+    -webkit-background-clip: text;
+}

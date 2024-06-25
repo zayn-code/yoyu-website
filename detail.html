@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="wesaw.ico"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <link rel="stylesheet" href="css/common.css" type="text/css"/>
+    <link rel="stylesheet" href="css/detail.css" type="text/css"/>
+    <title>月游科技</title>
+</head>
+<body class="flex-center">
+<div class="body-div">
+    <div style="background: #F9F9F9;">
+        <div class="logo flex-start" style="align-items: center">
+            <img alt="logo" src="images/logo.png"/>
+            <div style="margin-left: 20px;font-size: 32px;font-weight: 700">广东月游科技有限公司</div>
+        </div>
+        <div style="padding: 0 72px;">
+            <div style="padding: 0 48px">
+                <div class="product-header" style="margin-top: 84px">
+                    <div id="product-icon">
+
+                    </div>
+                    <div class="product-title">
+                        <div>
+                            <div style="font-weight: 500;font-size: 40px;" id="product-title">CK浏览器</div>
+                            <div class="downloadBtn" onclick="openUrl(0)">
+                                应用下载
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-title">
+                    详细信息
+                </div>
+                <div class="flex-between" style="flex-wrap: wrap">
+                    <div class="flex-between detail-column">
+                        <div class="detail-label">包名：</div>
+                        <div style="font-size: 24px;font-weight: 400" id="product-appId">com.cdws.ck</div>
+                    </div>
+                    <div class="flex-between detail-column">
+                        <div class="detail-label">开发者：</div>
+                        <div style="font-size: 24px;font-weight: 500">广东月游科技有限责任公司</div>
+                    </div>
+                    <div class="flex-between detail-column">
+                        <div class="detail-label">隐私政策：</div>
+                        <div class="click-detail" onclick="openUrl(1)">点击查看</div>
+                    </div>
+                    <div class="flex-between detail-column">
+                        <div class="detail-label">服务条款：</div>
+                        <div class="click-detail" onclick="openUrl(2)">点击查看</div>
+                    </div>
+                </div>
+                <div class="detail-title">
+                    应用介绍
+                </div>
+                <div class="product-desc" style="font-size: 24px;line-height: 36px;margin-top: 0" id="product-desc">
+
+                </div>
+                <div class="detail-title">
+                    手机截图
+                </div>
+            </div>
+            <div class="creenshot-div flex-between" style="flex-wrap: wrap" id="product-creenshot">
+
+            </div>
+
+        </div>
+        <div class="foot">
+            版权所有：广东月游科技有限责任公司
+            <a href="https://beian.miit.gov.cn/" target="_blank"
+               style="text-decoration: none;color: blue;margin-left: 20px">蜀ICP备2020032080号-3</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="product.js"></script>
+<script>
+    function getQueryVariable(variable) {
+        const query = window.location.search.substring(1);
+        const vars = query.split("&");
+        for (let i = 0; i < vars.length; i++) {
+            const pair = vars[i].split("=");
+            if (pair[0] === variable) {
+                return pair[1];
+            }
+        }
+        return false
+    }
+
+    const name = decodeURI(getQueryVariable('p'))
+    const product = products.find(v => v.title === name)
+    document.getElementById('product-title').innerHTML = product.title
+    document.getElementById('product-appId').innerHTML = product.app_id
+    document.getElementById('product-desc').innerHTML = product.desc
+    document.getElementById('product-icon').innerHTML = `<img width="128" style="margin-right: 24px" alt="图标" src="images/product/${product.title}.svg"/>`
+
+    let creenshotHtml = ''
+    const list = [1, 2, 3, 4]
+    for (let i in list) {
+        creenshotHtml += `<img alt="截图" src="images/product-creenshot/${product.title}商店图-${list[i]}.jpg"/>`
+    }
+    document.getElementById('product-creenshot').innerHTML = creenshotHtml
+
+    function openUrl(type) {
+        switch (type) {
+            case 0:
+                window.open(product.downloadUrl)
+                return
+            case 1:
+                window.open('https://app.lamaitech.com/' + product.alisa + '/privacy.html')
+                return;
+            case 2:
+                window.open('https://app.lamaitech.com/' + product.alisa + '/protocol.html')
+        }
+    }
+</script>
+</html>

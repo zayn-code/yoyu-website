@@ -1,0 +1,44 @@
+.downloadBtn {
+    width: 144px;
+    height: 56px;
+    background: #0256FF;
+    border-radius: 70px 70px 70px 70px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 56px;
+    font-style: normal;
+    text-transform: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.detail-title {
+    padding: 24px 0;
+    margin: 24px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.detail-column {
+    width: 568px;
+    height: 54px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.detail-label {
+    font-weight: 500;
+    font-size: 24px;
+    color: #666666;
+}
+
+.creenshot-div {
+    padding-bottom: 180px;
+
+    img {
+        width: 288px;
+        margin-bottom: 40px;
+    }
+}
